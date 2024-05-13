@@ -22,15 +22,16 @@ concatString("ciao", "a tutti");
 
 console.log("------------------ ESERCIZIO 2 ------------------");
 
+const arrRandNum = [];
+
 const array10 = function () {
-  const arr = [];
   for (let i = 0; i < 10; i++) {
-    arr[i] = Math.floor(Math.random() * 101);
+    arrRandNum[i] = Math.floor(Math.random() * 101);
   }
-  console.log(arr);
 };
 
 array10();
+console.log(arrRandNum);
 
 /* ESERCIZIO 3 (filter)
   Scrivi una funzione per ricavare solamente i valori PARI da un array composto da soli valori numerici
@@ -51,6 +52,15 @@ console.log(arrEven);
 /* ESERCIZIO 4 (forEach)
   Scrivi una funzione per sommare i numeri contenuti in un array
 */
+
+console.log("------------------ ESERCIZIO 4 ------------------");
+
+let sum = 0;
+arrRandNum.forEach(function (currentNum) {
+  sum += currentNum;
+});
+
+console.log(sum);
 
 /* ESERCIZIO 5 (reduce)
   Scrivi una funzione per sommare i numeri contenuti in un array
