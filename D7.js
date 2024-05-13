@@ -70,6 +70,17 @@ console.log(sum);
   Scrivi una funzione che, dato un array di soli numeri e un numero n come parametri, ritorni un secondo array con tutti i valori del precedente incrementati di n
 */
 
+console.log("------------------ ESERCIZIO 6 ------------------");
+
+let n = Math.floor(Math.random() * 11);
+console.log("n = ", n);
+const numeri2 = [];
+numeri.map(function (currentNum) {
+  return numeri2.push(currentNum + n);
+});
+
+console.log(numeri2);
+
 /* ESERCIZIO 7 (map)
   Scrivi una funzione che, dato un array di stringhe, ritorni un nuovo array contenente le lunghezze delle rispettive stringhe dell'array di partenza
   es.: ["EPICODE", "is", "great"] => [7, 2, 5]
