@@ -66,6 +66,16 @@ console.log(sum);
   Scrivi una funzione per sommare i numeri contenuti in un array
 */
 
+console.log("------------------ ESERCIZIO 5 ------------------");
+
+const sumNumbers = numeri.reduce((totale, valoreCorrente) => totale + valoreCorrente);
+
+/* const sumNumbers = numeri.reduce(function (totale, valoreCorrente) {
+  return totale + valoreCorrente;
+});
+ */
+console.log(sumNumbers);
+
 /* ESERCIZIO 6 (map)
   Scrivi una funzione che, dato un array di soli numeri e un numero n come parametri, ritorni un secondo array con tutti i valori del precedente incrementati di n
 */
@@ -222,33 +232,40 @@ const movies = [
   Scrivi una funzione per trovare il film più vecchio nell'array fornito.
 */
 
-movies.forEach(function (year) {
-  let oldest = Math.min(year);
-  return oldest;
-});
-
-console.log();
+console.log("------------------ ESERCIZIO 9 ------------------");
 
 /* ESERCIZIO 10
   Scrivi una funzione per ottenere il numero di film contenuti nell'array fornito.
 */
 
+console.log("------------------ ESERCIZIO 10 ------------------");
+
 /* ESERCIZIO 11 (map)
   Scrivi una funzione per creare un array con solamente i titoli dei film contenuti nell'array fornito.
 */
+
+console.log("------------------ ESERCIZIO 11 ------------------");
 
 /* ESERCIZIO 12 (filter)
   Scrivi una funzione per ottenere dall'array fornito solamente i film usciti nel millennio corrente.
 */
 
+console.log("------------------ ESERCIZIO 12 ------------------");
+
 /* ESERCIZIO 13 (reduce)
   Scrivi una funzione per calcolare la somma di tutti gli anni in cui sono stati prodotti i film contenuti nell'array fornito.
 */
+
+console.log("------------------ ESERCIZIO 13 ------------------");
 
 /* ESERCIZIO 14 (find)
   Scrivi una funzione per ottenere dall'array fornito uno specifico film (la funzione riceve un imdbID come parametro).
 */
 
+console.log("------------------ ESERCIZIO 14 ------------------");
+
 /* ESERCIZIO 15 (findIndex)
   Scrivi una funzione per ottenere dall'array fornito l'indice del primo film uscito nell'anno fornito come parametro.
 */
+
+console.log("------------------ ESERCIZIO 15 ------------------");
