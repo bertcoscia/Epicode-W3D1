@@ -6,11 +6,10 @@
 console.log("------------------ ESERCIZIO 1 ------------------");
 
 let concatString = function (string1, string2) {
-  const str1 = string1.split("");
-  const str2 = string2.split("");
-  const arr1 = str1.slice(0, 2);
-  const arr2 = str2.slice(-3, str2.lenght);
-  console.log(arr1.concat(arr2));
+  const str1 = string1.slice(0, 2);
+  const str2 = string2.slice(-3);
+  stringConcatenata = str1 + str2;
+  console.log(stringConcatenata.toUpperCase());
 };
 
 concatString("mario", "alberto");
@@ -84,10 +83,12 @@ console.log("------------------ ESERCIZIO 6 ------------------");
 
 const n = 1;
 
-const numeri2 = numeri.map(function (num) {
+/* const numeri2 = numeri.map(function (num) {
   const num2 = num + n;
   return num2;
-});
+}); */
+
+const numeri2 = numeri.map((num) => num + n);
 
 console.log(numeri2);
 
