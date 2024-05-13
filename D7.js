@@ -72,11 +72,12 @@ console.log(sum);
 
 console.log("------------------ ESERCIZIO 6 ------------------");
 
-let n = Math.floor(Math.random() * 11);
+let n = /* Math.floor(Math.random() * 11); */ 1;
 console.log("n = ", n);
-const numeri2 = [];
-numeri.map(function (currentNum) {
-  return numeri2.push(currentNum + n);
+
+const numeri2 = numeri.map(function (number, n) {
+  const numero = number + n;
+  return numero;
 });
 
 console.log(numeri2);
@@ -85,6 +86,16 @@ console.log(numeri2);
   Scrivi una funzione che, dato un array di stringhe, ritorni un nuovo array contenente le lunghezze delle rispettive stringhe dell'array di partenza
   es.: ["EPICODE", "is", "great"] => [7, 2, 5]
 */
+
+console.log("------------------ ESERCIZIO 7 ------------------");
+
+const arrString = ["EPICODE", "is", "great"];
+const lenghtString = arrString.map(function (stringa) {
+  const strLenght = stringa.length;
+  return strLenght;
+});
+
+console.log(lenghtString);
 
 /* ESERCIZIO 8 (forEach o for)
   Scrivi una funzione per creare un array contenente tutti i valori DISPARI da 1 a 99.
