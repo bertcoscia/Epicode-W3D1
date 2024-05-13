@@ -72,12 +72,11 @@ console.log(sum);
 
 console.log("------------------ ESERCIZIO 6 ------------------");
 
-let n = /* Math.floor(Math.random() * 11); */ 1;
-console.log("n = ", n);
+const n = 1;
 
-const numeri2 = numeri.map(function (number, n) {
-  const numero = number + n;
-  return numero;
+const numeri2 = numeri.map(function (num) {
+  const num2 = num + n;
+  return num2;
 });
 
 console.log(numeri2);
