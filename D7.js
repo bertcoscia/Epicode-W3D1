@@ -36,6 +36,18 @@ array10();
   Scrivi una funzione per ricavare solamente i valori PARI da un array composto da soli valori numerici
 */
 
+console.log("------------------ ESERCIZIO 3 ------------------");
+
+const numeri = [4, 8, 15, 16, 23, 42];
+
+const arrEven = numeri.filter(function (numPari) {
+  if (numPari % 2 === 0) {
+    return numPari;
+  }
+});
+
+console.log(arrEven);
+
 /* ESERCIZIO 4 (forEach)
   Scrivi una funzione per sommare i numeri contenuti in un array
 */
