@@ -100,6 +100,22 @@ console.log(lenghtString);
   Scrivi una funzione per creare un array contenente tutti i valori DISPARI da 1 a 99.
 */
 
+console.log("------------------ ESERCIZIO 8 ------------------");
+
+const num99 = [];
+for (let i = 1; i < 100; i++) {
+  num99.push(i);
+}
+console.log(num99);
+
+const oddNum = [];
+num99.forEach(function (index) {
+  if (num99[index] % 2 !== 0) {
+    oddNum.push(num99[index]);
+  }
+});
+console.log(oddNum);
+
 /* Questo array di film verrà usato negli esercizi a seguire. Non modificarlo e scorri oltre per riprendere gli esercizi :) */
 const movies = [
   {
@@ -205,6 +221,13 @@ const movies = [
 /* ESERCIZIO 9 (forEach)
   Scrivi una funzione per trovare il film più vecchio nell'array fornito.
 */
+
+movies.forEach(function (year) {
+  let oldest = Math.min(year);
+  return oldest;
+});
+
+console.log();
 
 /* ESERCIZIO 10
   Scrivi una funzione per ottenere il numero di film contenuti nell'array fornito.
