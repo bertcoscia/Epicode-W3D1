@@ -20,6 +20,18 @@ concatString("ciao", "a tutti");
   Scrivi una funzione che torni un array di 10 elementi; ognuno di essi deve essere un valore random compreso tra 0 e 100 (incluso).
 */
 
+console.log("------------------ ESERCIZIO 2 ------------------");
+
+const array10 = function () {
+  const arr = [];
+  for (let i = 0; i < 10; i++) {
+    arr[i] = Math.floor(Math.random() * 101);
+  }
+  console.log(arr);
+};
+
+array10();
+
 /* ESERCIZIO 3 (filter)
   Scrivi una funzione per ricavare solamente i valori PARI da un array composto da soli valori numerici
 */
